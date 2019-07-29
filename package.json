@@ -5,12 +5,14 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
+    "build:library": "vue-cli-service build --target lib --name vimpress ./src/components/lib/index.js --dest ./dist/vimpress",
     "lint": "vue-cli-service lint",
     "test:e2e": "vue-cli-service test:e2e",
     "test:unit": "vue-cli-service test:unit"
   },
   "dependencies": {
     "core-js": "^3.1.2",
+    "impress.js": "^1.0.0",
     "vue": "^2.6.10"
   },
   "devDependencies": {
@@ -29,6 +31,7 @@
     "lint-staged": "^8.1.5",
     "stylus": "^0.54.5",
     "stylus-loader": "^3.0.2",
+    "vue-cli-plugin-pug": "^1.0.7",
     "vue-template-compiler": "^2.6.10"
   },
   "gitHooks": {
