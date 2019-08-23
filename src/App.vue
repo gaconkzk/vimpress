@@ -1,6 +1,6 @@
 <template lang="pug">
   #app
-    v-impress
+    v-impress#testimp(:duration="500" :autoplay="5")
       v-impress-step(:position="{x: -1000, y: -1500}" notes="what the hell" is-title is-slide)
         h1 Example Presentation: <br/>
           | Classic Slides
